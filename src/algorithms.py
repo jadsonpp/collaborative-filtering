@@ -51,7 +51,7 @@ def find_colabs(liked_list, ratings):
     r = r.values.tolist()
     #Verifica se o userId ja foi adicionado na lista.
     for i in range (len(r)):
-      if (i not in userIds):
+      if (r[i][0] not in userIds):
         userIds.append(r[i][0])
   #Retorna a lista de usuerID
   return userIds
